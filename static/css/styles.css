@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header nav a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(to bottom right, #4c6ef5, #15aabf);
+    color: white;
+  }
+  
+  .hero h2 {
+    margin: 0 0 1rem;
+  }
+  
+  .hero p {
+    margin: 0 0 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .hero .btn {
+    padding: 0.8rem 1.5rem;
+    background: #15aabf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .hero .btn.secondary {
+    background: white;
+    color: #15aabf;
+    border: 2px solid #15aabf;
+  }
+  
+  .hero .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .feature img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Recent Uploads Section */
+  .media-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .media-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: white;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .media-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  

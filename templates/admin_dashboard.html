@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/browse">Browse Media</a>
+        </nav>
+    </header>
+    <main>
+        <form action="/upload/images" method="POST" enctype="multipart/form-data">
+            <h3>Upload Image:</h3>
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        <form action="/upload/videos" method="POST" enctype="multipart/form-data">
+            <h3>Upload Video:</h3>
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        <form action="/upload/audio" method="POST" enctype="multipart/form-data">
+            <h3>Upload Audio:</h3>
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
+    </main>
+</body>
+</html>

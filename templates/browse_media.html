@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Media</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Browse Media</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/admin">Admin Login</a>
+        </nav>
+    </header>
+    <main>
+        <form method="POST">
+            <input type="text" name="search_query" placeholder="Search..." value="{{ search_query }}">
+            <button type="submit">Search</button>
+        </form>
+        <section>
+            {% for subfolder, files in media_files.items() %}
+                <h2>{{ subfolder.title() }}</h2>
+                <div class="media-grid">
+                    {% for file in files %}
+                        <div class="media-card">
+                            <p>{{ file }}</p>
+                            <a href="/media/{{ subfolder }}/{{ file }}" target="_blank">View</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>
